@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Ice Cream Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <h1>Ice Cream Shop</h1>
+    <p>Number of Scoops <input type="number" value="" id="numberScoops" /></p>
+    <fieldset>
+        <input type="radio" name="coneOrCup" id="cone"
+        value="cone" checked> Cone 
+        <input type="radio" name="coneOrCup" id="cup"
+        value="cup"> Cup <br>
+       </fieldset><br>
+    <fieldset id="toppingsBox">
+        <legend>Toppings<legend>
+        <input type="checkbox" id="sprinkles" name="sprinkles"
+        value="sprinkles" checked>
+        <label for="sprinkles"> Sprinkles ($.50)</label>
+        <input type="checkbox" id="whippedCream" name="whippedCream" value="gls">
+        <label for="whippedCream"> Whipped Cream ($.25)</label><br>
+        <input type="checkbox" id="hotFudge" name="hotFudge"
+        value="hotFudge">
+        <label for="hotFudge"> Hot Fudge ($1.95)
+        </label>
+        <input type="checkbox" id="cherry" name="cherry"
+        value="cherry">
+        <label for="cherry"> Cherry ($.25)
+        </label>
+       </fieldset>
+       <br>
+       <input type="button" value="Submit Order" id="submitBtn" />
+       <br>
+       <fieldset>
+       <p>Base Price: <input type="number" id="basePrice" readonly>  </p>
+       <p>Tax: <input type="number" id="taxPrice" readonly>  </p>
+       <br>
+       <p >Total Due: <input type="number" id="totalDue" readonly>  </p>
+       </fieldset>
+       <script
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+       crossorigin="anonymous"
+     ></script>
+    <script src="./scripts/index.js"></script>
+
+  </body>
+</html>
+
